@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(225deg, #8c5db5 20%, #4aa7ea 100%);
+  position: relative;
+}
+#img1 {
+  position: absolute;
+  bottom: 0px;
+  left: -70px;
+}
+#img2 {
+  position: absolute;
+  height: 30%;
+  top: -60px;
+  right: 340px;
+}
+#hscore {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "New Tegomin", serif;
+}
+#heading {
+  color: #1a2c5b;
+  text-align: center;
+  font-family: cursive;
+  font-size: 60px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#panel {
+  height: 80%;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 115px;
+  border: 5px solid rgba(0, 0, 0, 0.776);
+}
+#crk {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140%;
+  width: 100%;
+  display: none;
+}
+#panel-top {
+  padding: 0px 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #1d976c;
+  position: relative;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.776);
+}
+.btn {
+  position: absolute;
+  top: 5px;
+  background-color: rgba(0, 56, 68, 1);
+  padding: 10px 10px;
+  font-weight: 600;
+  font-size: 25px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 3px solid #83bd83;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+#btn1 {
+  left: 5px;
+}
+#btn1:hover {
+  background-color: red;
+}
+#btn2 {
+  left: 90px;
+}
+#btn2:hover {
+  background-color: #0a6ed1;
+}
+.elem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.elem h2 {
+  font-weight: 900;
+  font-size: 40px;
+  color: rgb(1, 36, 44);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.box {
+  font-weight: 900;
+  font-size: 40px;
+  font-family: cursive;
+  padding: 2px 20px;
+  background-color: #fff;
+  border-radius: 9px;
+  color: black;
+  border: 3px solid rgba(0, 0, 0, 0.776);
+}
+#hitval {
+  color: rgb(17, 164, 71);
+}
+#timerval {
+  color: red;
+}
+#pbtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  height: calc(100% - 100px);
+  overflow: hidden;
+}
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 39px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    147deg,
+    #fed005 0%,
+    hsl(0, 95%, 49%) 74%,
+    #ff2b20 80%
+  );
+
+  color: black;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.bubble:hover {
+  transform: scale(1.6);
+  transition: all 0.3s ease;
+  border: 5px solid black;
+}
+#game1,
+#game2 {
+  width: 300px;
+  height: 100px;
+  font-family: cursive;
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#game2 {
+  width: 400px;
+  left: 55%;
+  top: 45%;
+}
+
+#game3 {
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  color: red;
+  font-size: 30px;
+}
